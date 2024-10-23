@@ -134,12 +134,12 @@
     align-items: center;
     gap: 60px;
     flex-wrap: wrap;
-    width: 85%;
+    width: 100%;
 
 }
 
 .aboutus-image img {
-    max-width: 500px;
+    max-width: 400px;
     border-radius: 15px;
 }
 
@@ -157,6 +157,38 @@
     font-size: 18px;
     color: #666;
     margin-bottom: 15px;
+}
+
+#notification-banner {
+    display: block;
+    padding: 15px;
+    background-color: var(--color-primary-1);
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#allow-notifications {
+    background-color: #4CAF50;
+    color: white;
+}
+
+#deny-notifications {
+    background-color: #f44336;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.9;
 }
 
 @media screen and (max-width: 1170px) {
@@ -181,5 +213,10 @@
 @media screen and (max-width: 450px) {
     #phone_button button {
         display: none;
+    }
+
+    .aboutus-image img {
+        max-width: 320px;
+        border-radius: 15px;
     }
 }

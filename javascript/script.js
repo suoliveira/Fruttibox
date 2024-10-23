@@ -6,6 +6,7 @@ $(document).ready(function() {
 
     const sections = $('section');
     const navItems = $('.nav-item');
+    let plusValue = 0;
 
     $(window).on('scroll', function () {
         const header = $('header');
@@ -21,7 +22,7 @@ $(document).ready(function() {
 
         sections.each(function(i) {
             const section = $(this);
-            const sectionTop = section.offset().top - 96;
+            const sectionTop = section.offset().top - (96 + plusValue);
             const sectionBottom = sectionTop+ section.outerHeight();
 
             if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
@@ -57,4 +58,19 @@ $(document).ready(function() {
         duration: 1000,
         distance: '20%'
     })
+
+    document.getElementById('notification-banner').style.display = 'block';
+    plusValue = 80;
+    // Lida com a permissão de notificações
+    document.getElementById('allow-notifications').onclick = function() {
+        Notification.requestPermission().then(function(result) {
+        });
+        document.getElementById('notification-banner').style.display = 'none';
+        plusValue = 0;
+    };
+
+    document.getElementById('deny-notifications').onclick = function() {
+        document.getElementById('notification-banner').style.display = 'none';
+        plusValue = 0;
+    };
 });
