@@ -6,6 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/Fruttibox.png">
+    <meta name="description" content="Com Fruttibox, você sempre tem frutas frescas, selecionadas e preparadas com todo cuidado, para garantir mais saúde e sabor no seu dia a dia.">
+    <meta name="keywords" content="frutas, frutas frescas, saudável, refeição saudável">
+    <meta name="robots" content="index, follow">
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
@@ -38,6 +42,9 @@
                     <a href="#benefits">Benefícios</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#news">Notícias</a>
+                </li>
+                <li class="nav-item">
                     <a href="#aboutus">Sobre Nós</a>
                 </li>
                
@@ -54,7 +61,7 @@
 
         <div id="mobile_menu">
             <ul id="mobile_nav_list">
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
@@ -62,6 +69,15 @@
                 </li>
                 <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
+                </li> 
+                <li class="nav-item">
+                    <a href="#benefits">Benefícios</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#news">Notícias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#aboutus">Sobre Nós</a>
                 </li>
             </ul>
 
@@ -72,6 +88,38 @@
     </header>
 
     <main id="content">
+        <div class="chat-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#f8049c" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"/>
+                <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9 9 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.4 10.4 0 0 1-.524 2.318l-.003.011a11 11 0 0 1-.244.637c-.079.186.074.394.273.362a22 22 0 0 0 .693-.125m.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6-3.004 6-7 6a8 8 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a11 11 0 0 0 .398-2"/>
+              </svg>
+        </div>
+        <div class="chat-box-container active">
+            <div class="chat-box">
+                <div class="chat-box-header">
+                    <h4>Chat Fruttibox</h4>
+                    <button class="chat-box-close">
+                        <i class="fa-solid fa-times"></i>
+                    </button>
+                </div>
+                <div class="chat-box-content">
+                    <div class="chat-box-message">
+                        <p class="chat-message-sent">
+                            Olá! Como posso te ajudar? <br>
+                            1 - Quero fazer um pedido <br>
+                            2 - Quero mandar um curriculo <br>
+                            3 - Quero deixar um feedback <br>
+                        </p>
+                    </div>
+                </div>
+                <div class="chat-box-input">
+                    <input name="message" type="text" placeholder="Digite sua mensagem...">
+                    <button class="send">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
         <section id="home">
             <div class="shape"></div>
             <div id="cta">
@@ -285,6 +333,45 @@
                     <i class="fa-solid fa-leaf benefit-icon"></i>
                     <h3 class="benefit-title">Saúde e Bem-Estar</h3>
                     <p class="benefit-description">Com Fruttibox, você sempre tem frutas frescas, selecionadas e preparadas com todo cuidado, para garantir mais saúde e sabor no seu dia a dia.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="news">
+            <h2 class="section-title">Notícias</h2>
+    
+            <div id="dishes">
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+
+                    <img src="images/equipe.webp" class="news-image" alt="">
+
+                    <h3 class="dish-title">
+                        Estamos contratando
+                    </h3>
+
+                    <span class="dish-description">
+                        Venha fazer parte da nossa equipe! <br>
+                        Para saber mais entre em contato com nosso chat.
+                    </span>
+                </div>
+
+                <div class="dish">
+                    <div class="dish-heart">
+                        <i class="fa-solid fa-newspaper"></i>
+                    </div>
+
+                    <img src="images/morango.png" class="news-image" alt="">
+
+                    <h3 class="dish-title">
+                        Benefícios do morango
+                    </h3>
+
+                    <span class="dish-description">
+                        O morango é uma fruta rica em vitaminas C, A, E, B5 e B6. Além disso, ele também é uma fonte de cálcio, potássio, ferro, selênio, magnésio e compostos fenólicos — que são antioxidantes.
+                    </span>
                 </div>
             </div>
         </section>
